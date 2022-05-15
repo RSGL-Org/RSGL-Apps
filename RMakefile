@@ -1,0 +1,16 @@
+SOURCE += source/*.cpp
+LIBS += -lRSGL
+ARGS += -g
+OUTPUT = RSGL-Apps
+GXX = g++
+
+pash{
+      ./$(OUTPUT)
+}
+
+install{
+      bash{
+           sudo cp -r res /usr/share/RSGLApps
+           sudo cp ./RSGL-Apps /usr/bin/ 
+      }
+}
