@@ -1,11 +1,11 @@
 SOURCE += source/*.cpp
-LIBS += -lRSGL
+LIBS += $(RSGL-static)
 ARGS += -g
 OUTPUT = RSGL-Apps
 GXX = g++
 
 pash{
-      ./$(OUTPUT)
+      ./$(OUTPUT) -gui
 }
 
 install{
